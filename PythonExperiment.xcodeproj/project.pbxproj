@@ -6,10 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		D2051E0E1CD41D7E00478FB6 /* wikiscraper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = wikiscraper.py; sourceTree = "<group>"; };
+		D2051E0F1CD41E2900478FB6 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		D232173F1CD4A68100B4B63B /* IO.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = IO.py; sourceTree = "<group>"; };
+		D23217401CD4DCBA00B4B63B /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		D23217411CD570E500B4B63B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		D2051E071CD41D0D00478FB6 = {
 			isa = PBXGroup;
 			children = (
+				D23217411CD570E500B4B63B /* LICENSE */,
+				D23217401CD4DCBA00B4B63B /* README */,
+				D2051E0E1CD41D7E00478FB6 /* wikiscraper.py */,
+				D232173F1CD4A68100B4B63B /* IO.py */,
+				D2051E0F1CD41E2900478FB6 /* main.py */,
 			);
 			sourceTree = "<group>";
 		};
