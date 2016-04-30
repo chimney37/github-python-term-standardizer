@@ -1,4 +1,4 @@
-The purpose of the project is to scrape wikipedia using a set of keywords to get their canonical form. For example. The primary relationship we want to scrape is ja <=> en. Therefore the input can either be Japanese or English. If a search result exist on wikipedia, we get the top ranked result, by fetching the page of the search result. Note: this software is dependent on wikipedia API for python.
+The purpose of the program is to scrape wikipedia using a set of keywords to get their canonical form. We can go ja => en or en => ja. Therefore the input can either be Japanese or English. If a search result exist on wikipedia (language is set to "ja"), we get the top ranked result, by fetching the page of the search result. Note: this software is dependent on wikipedia API for python.
 
 
 Installation:
@@ -23,7 +23,7 @@ Output file format (TSV) Per row:
 
 TODO:
 
-    Try to use a more versatile wiki scraping API, to get the translation equivalent of ja => en and en => ja rather than relying it on a single language setting and getting page based on its title.
+    Try to use a more versatile wiki scraping API, to get the translation equivalent of ja => en and en => ja by traversing the language link of a page article rather than relying it on a single language setting and getting page based on its title.
 
 
 Changelog:
