@@ -11,9 +11,9 @@ sys.stdout = codecs.lookup('utf_8')[-1](sys.stdout)
 wscraper = wikiscraper.wikiScraper("ja")
 
 # parse arguments
-parser = argparse.ArgumentParser(description='Gets English translations of Japanese from wikipedia')
-parser.add_argument('--batch', type=argparse.FileType('r'), help='batch process a list of JP terms from a file')
-parser.add_argument('--out', type=argparse.FileType('w'), help='output a the equivalent summary and title')
+parser = argparse.ArgumentParser(description='Gets English or Japanese translations of keyword terms from wikipedia')
+parser.add_argument('--batch', type=argparse.FileType('r'), help='batch process a list of terms from a file')
+parser.add_argument('--out', type=argparse.FileType('w'), help='output the equivalent term and summary as <input term><output term><summary> delimited by tabs')
 args = parser.parse_args()
 print "Processing file:" + args.batch.name
 
@@ -36,4 +36,4 @@ writer = IO.TSVUnicodeWriter(open(args.out.name,"w"))
 writer.writerows(output)
 
 print "Output to file:" + args.out.name
-
+#end of program
