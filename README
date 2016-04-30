@@ -1,5 +1,6 @@
 The purpose of the project is to scrape wikipedia using a set of keywords to get their canonical form. For example. The primary relationship we want to scrape is ja <=> en. Therefore the input can either be Japanese or English. If a search result exist on wikipedia, we get the top ranked result, by fetching the page of the search result. Note: this software is dependent on wikipedia API for python.
 
+
 Installation:
 
     1) install python >= 2.6
@@ -9,6 +10,16 @@ Installation:
 Running the software:
 
     python main.py --batch <path-to-input-file> --out <path-to-output-file>
+
+Input file format (TSV) Per row:
+
+    <Input Keyword>
+    Note: Multiple rows of keywords in Japanese or English
+
+Output file format (TSV) Per row:
+
+    <Input Keyword><tab><Output Keyword><tab>Summary
+    Note: Summary refers to the page summary of the wiki article, specified by the output keyword (title of wiki page)
 
 TODO:
 
